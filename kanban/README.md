@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Канбан-доска для управления документами
 
-## Getting Started
+## Описание
+Это одностраничное приложение, представляющее собой канбан-доску для управления документами. Пользователи могут добавлять документы и перетаскивать их между колонками: "В работе", "На проверке" и "Завершено".
 
-First, run the development server:
+## Функциональность
+- Доска с тремя колонками:
+  - В работе
+  - На проверке
+  - Завершено
+- Возможность перетаскивать документы между колонками.
+- Возможность добавлять новые документы в колонку «В работе».
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Технологии
+- **Next.js**: фреймворк для создания серверных и клиентских приложений на React.
+- **Redux Toolkit**: библиотека для управления состоянием приложения.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Установка
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. Клонируйте репозиторий:
+   ```bash
+   git clone https://github.com/V0000DY/habr-hexlet.git
+   ```
+2. Перейдите в директорию проекта:
+    ```bash
+    cd habr-hexlet/kanban
+    ```
+3. Установите зависимости:
+    ```bash
+    npm install
+    ```
+## Запуск приложения
+1. Запустите приложение:
+    ```bash
+    npm run dev
+    ```
+    Это запустит сервер на http://localhost:3000.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Использование
 
-## Learn More
+1. **Добавление нового документа**:
+- Введите название документа в текстовое поле и нажмите кнопку "Добавить документ", чтобы сохранить новый документ в колонке "В работе".
 
-To learn more about Next.js, take a look at the following resources:
+2. **Перетаскивание документов**:
+- Перетаскивайте документы между досками "В работе", "На проверке" и "Завершено", чтобы изменить их статус.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Отображение документов**:
+- Все документы будут отображены на соответствующих досках.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Участники
+Виталий Рубцов — Основной разработчик
